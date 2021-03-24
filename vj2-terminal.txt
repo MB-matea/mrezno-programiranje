@@ -1,0 +1,120 @@
+Microsoft Windows [Version 10.0.19042.867]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\User>cd Documents
+
+C:\Users\User\Documents>cd ASPIRA-racunalne-mreze
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git init
+Initialized empty Git repository in C:/Users/User/Documents/ASPIRA-racunalne-mreze/.git/
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git remote add origin https://github.com/MB-matea/racunalne-mreze.git
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git config --global user.name „Matea Beslic"
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git config --global user.email „mateabeslic1@gmail.com"
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/User/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+user.name=ja sam pelivan
+user.email=„mateabeslic1@gmail.com
+user.name=„Matea
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/MB-matea/racunalne-mreze.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git add .
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git commit -m "prvi commit"
+[master (root-commit) 2a205d2] prvi commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 vjezba3.txt
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 219 bytes | 219.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MB-matea/racunalne-mreze.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git branch branch2
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git checkout branch2
+Switched to branch 'branch2'
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>test.txt
+'test.txt' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>echo "" > test.txt
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>test.txt
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git add test.txt
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git commit -m "added test.txt file"
+[branch2 fde2f29] added test.txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git push -u origin branch2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/MB-matea/racunalne-mreze/pull/new/branch2
+remote:
+To https://github.com/MB-matea/racunalne-mreze.git
+ * [new branch]      branch2 -> branch2
+Branch 'branch2' set up to track remote branch 'branch2' from 'origin'.
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git merge branch2
+Updating 2a205d2..fde2f29
+Fast-forward
+ test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>git branch -d branch2
+Deleted branch branch2 (was fde2f29).
+
+C:\Users\User\Documents\ASPIRA-racunalne-mreze>
